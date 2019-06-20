@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Au's Cademy</title>
+    <style>
+
+        .wrap{
+
+        }
+        .banner{
+            width: 1366px;
+            height: 64px;
+            border-bottom: solid 2px #efefef;
+            position: relative;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%,0);
+            /*min-width:600px;*/
+
+        }
+        .logo{
+            width: 122px;
+            height: 28px;
+            position: relative;
+            left: 41px;
+            top: 19px;
+            /*z-index: -1;*/
+        }
+        .logo img{
+            /*width: 120px;*/
+            /*height: 27px;*/
+            /*z-index: 1;*/
+            position: absolute;
+            /*left: 0;*/
+            /*top: 0px;*/
+            /*left: 41px;*/
+        }
+        .catalog,
+        .price,
+        .login
+        {
+            font-family: 'Arial';
+            font-size: 18px;
+            position: absolute;
+            left: 262px;
+            line-height: 100%;
+            text-align: center;
+            top: 28px;
+        }
+        .price{
+            left: 357px;
+        }
+        .upgrade{
+
+            width: 149px;
+            height: 39px;
+            border: solid 1px #6400E4;
+            border-radius: 5px;
+            position: absolute;
+            color: #6400E4;
+            line-height: 39px;
+            text-align: center;
+            left: 793px;
+            top: 11px;
+        }
+
+        .search {
+            width: 21px;
+            height: 19px;
+            position: relative;
+            left: 979px;
+            top: -7px;
+        }
+        .login{
+            left: 1063px;
+            /*font-style: bold;*/
+        }
+        .signup{
+            width: 96px;
+            height: 39px;
+            background-color: #6400E4;
+            position: absolute;
+            top: 11px;
+            left: 1158px;
+        }
+        .signup b{
+            color: white;
+            position: absolute;
+            line-height: 39px;
+            text-align: center;
+            left: 19px;
+
+        }
+        .logo:hover,
+        .catalog:hover,
+        .price:hover,
+        .upgrade:hover,
+        .search:hover,
+        .login:hover,
+        .signup:hover{
+            cursor: pointer;
+        }
+        .upgrade:hover{
+            background-color: #EFE5FD;
+
+        }
+        .catalog:hover,
+        .price:hover{
+            color: blue;
+        }
+        .course{
+            width: 1366px;
+            height: 200px;
+            position: relative;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0);
+        }
+
+        .title1{
+            position: relative;
+            left: 37px;
+            margin-top: 25px;
+        }
+        .title1 b,
+        .box1 p,
+        {
+            height: 20px;
+            width: 150px;
+            position: relative;
+            /*margin-bottom: 18px;*/
+
+
+        }
+        .title1 .b2{
+            position: relative;
+            left: 579px;
+        }
+        .detail{
+            width: 100%;
+            height: 96px;
+            position: relative;
+            margin-top: 25px;
+            left: 37px;
+        }
+        .detail .box{
+            position: absolute;
+
+            /*top: 0px;*/
+        }
+
+        .detail .box2{
+            left: 333px;
+
+        }
+        .box2 p,
+        .box4 p{
+            margin-top: 0px;
+        }
+        .detail .box3{
+            left: 677px;
+        }
+        .detail .box4{
+            left: 1000px;
+        }
+        .detail .box b:hover,
+        .detail .box p:hover{
+            color: blue;
+            cursor: pointer;
+
+        }
+        .mainbody{
+            background-color: #FDFDFC;
+        }
+        .content{
+            width: 1366px;
+            height: 186px;
+            position: relative;
+            /*margin-top: 37px;*/
+            background-color: #FDFDFC;
+            border-bottom: solid 2px #E9EAEA;
+            /*border-top: solid 2px #E9EAEA;*/
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0);
+        }
+        .content b,
+        .content p,
+        .content1 p,
+        .content1 b{
+            position: absolute;
+            left: 37px;
+
+        }
+        .content b{
+            font-size: 48px;
+            top: 40px;
+
+            /*border-top: solid 2px #6400E4;*/
+        }
+        .content p,
+        .content1 p{
+            /*top: 127px;*/
+            bottom: -1px;
+        }
+        .content1{
+            width: 1366px;
+            height: 100px;
+            position: relative;
+            background-color: #FDFDFC;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0);
+            background-image: url("images/prolog_03.png");
+            background-repeat: no-repeat;
+            background-position: 1280px 28px;
+        }
+        .content1 b{
+            top: 28px;
+        }
+        .info{
+            width: 1366px;
+            height: 400px;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, 0);
+            position: relative;
+            margin-top: 36px;
+            background-color: #FDFDFC;
+
+        }
+        .info1{
+            width: 362px;
+            height: 400px;
+            position: absolute;
+            left: 37px;
+            box-shadow: 0px 3px 4px 3px rgba(0,0,0,0.1);
+        }
+        .info1:hover{
+            box-shadow: 0px 3px 8px 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        .info1 .box1{
+            position: relative;
+            top: 34px;
+        }
+        .info1 b,
+        .info1 p{
+            position: absolute;
+            margin-top: 35px;
+            left: 15px;
+        }
+        .info1 b{
+            margin-top: 0px;
+        }
+        .session{
+            width: 1366px;
+            height: 900px;
+            left: 50%;
+            top: 0px;
+            transform: translate(-50%, 0);
+            position: relative;
+            margin-top: 90px;
+            border-bottom: 1px solid gainsboro;
+        }
+        .session .box1{
+            position: relative;
+            left: 37px;
+            /*margin-top: 20px;*/
+            padding-top: 27px;
+            border-top: 1px solid gainsboro;
+        }
+        .bo1 b{
+            /*margin-top: 20px;*/
+        }
+        ul{
+            width: 1366px;
+            height: 800px;
+            padding: 0;
+            margin-top: 30px;
+            position: relative;
+            left: 37px;
+
+        }
+        .session li{
+
+            width: 363px;
+            height: 217px;
+            float: left;
+            border: solid 1px lightgray;
+            margin-right: 25px;
+            margin-bottom: 25px;
+            list-style: none;
+
+        }
+        .blue{
+            width: 363px;
+            height: 25px;
+            position: relative;
+        }
+        .bl{
+            width: 363px;
+            height: 8px;
+            background-color: #3c64c2;
+        }
+        .blueSqu1{
+            width: 51px;
+            height: 34px;
+            background-color: #4c7ef3;
+            position: absolute;
+            right: 11px;
+            top: 0px;
+        }
+        .blueSqu1:before,
+        .blueSqu1:after{
+            content: '';
+            width: 30px;
+            height: 15px;
+            background-color: #6f97f5;
+            position: absolute;
+            right: 30px;
+            top: 0px
+        }
+        .blueSqu1:after{
+            background-color: #3a61bc;
+            right: -11px;
+            height: 30px;
+            width: 11px;
+            /*transform: rotate(90deg);*/
+        }
+        .blueSqu2{
+             width: 40px;
+             height: 37px;
+             background-color: #4c7ef3;
+             position: absolute;
+             right: 17px;
+             top: 0px;
+         }
+        .blueSqu2:before,
+        .blueSqu2:after{
+            content: '';
+            width: 23px;
+            height: 27px;
+            background-color: #476ecb;
+            position: absolute;
+            right: -17px;
+            top: 0px
+        }
+        .blueSqu2:after{
+            background-color: #6f97f5;
+            right: 0px;
+            height: 27px;
+            width: 18px;
+
+        }
+        .blueSqu3{
+            width: 50px;
+            height: 35px;
+            background-color: #4c7ef3;
+            position: absolute;
+            right: 16px;
+            top: 0px;
+        }
+        .blueSqu3:before,
+        .blueSqu3:after{
+            content: '';
+            width: 17px;
+            height: 17px;
+            background-color: #476ecb;
+            position: absolute;
+            right: -17px;
+            top: 0px
+        }
+        .blueSqu3:after{
+            background-color: #6f97f5;
+            right: 40px;
+            width: 17px;
+            height: 14px;
+
+        }
+        .blueSqu4{
+            width: 70px;
+            height: 38px;
+            background-color: #476ecb;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+        .blueSqu4:before,
+        .blueSqu4:after{
+            content: '';
+            width: 18px;
+            height: 27px;
+            background-color: #6f97f5;
+            position: absolute;
+            right: 0px;
+            top: 0px
+        }
+        .blueSqu4:after{
+            background-color: #6f97f5;
+            right: 40px;
+            width: 59px;
+            height: 27px;
+
+        }
+        li:hover{
+            box-shadow: 0px 3px 8px 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        .blue b{
+             position: absolute;
+             margin-top: 45px;
+             left: 15px;
+         }
+        .blue p{
+            /*position: absolute;*/
+            margin-top: 95px;
+            margin-left: 15px;
+        }
+        .footer{
+            width: 1366px;
+            height: 64px;
+            /*border-bottom: solid 2px #efefef;*/
+            position: relative;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%,0);
+
+        }
+        .footer1{
+            position: absolute;
+            left: 37px;
+        }
+        .footer1 p{
+            color: blue;
+        }
+        .footer1 p:hover{
+            color: lightblue;
+            cursor: pointer;
+        }
+        .footer2{
+            position: absolute;
+            right: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="banner">
+
+        <div class="logo">
+        <img src="http://chuantu.xyz/t6/702/1561030479x1033347913.png" alt="logo"/>
+        </div>
+        <div class="catalog">Catolog</div>
+        <div class="price">Pricing</div>
+        <div class="upgrade">
+            Upgrade To Pro
+        </div>
+        <div class="search">
+            <img src="projec1\images\search_03.png" alt=""/>
+        </div>
+        <div class="login">
+            <b>Log in</b>
+        </div>
+        <!--<div class="login"></div>-->
+        <div class="signup">
+            <b>Sign up</b>
+        </div>
+    </div>
+    <div class="course">
+
+            <div class="title1">
+                <b>BY SUBJECT</b>
+                <b class="b2">BY LANGUAGE</b>
+             </div>
+            <div class="detail">
+                <div class="box box1">
+                    <b>Full Catalog</b>
+                    <p>Web Development</p>
+                    <p>Programming</p>
+                    <p>Data Science</p>
+
+                    <!--<p>Full Catalog</p>-->
+                </div>
+                <div class="box box2">
+                    <p>Partnerships</p>
+                    <p>Design</p>
+                </div>
+                <div class="box box3">
+                    <b>HTML & CSS</b>
+                    <p>Python</p>
+                    <p>JavaScript</p>
+                    <p>Java</p>
+                </div>
+                <!--<div class="box2"></div>-->
+                <!--<div class="box3"></div>-->
+                <div class="box box4">
+                    <p>SQL</p>
+                    <p>Bash/Shell</p>
+                    <p>Ruby</p>
+                </div>
+
+            </div>
+
+    </div>
+    <div class="mainbody">
+        <div class="content">
+            <b>HTML & CSS</b>
+            <p>HTML is the foundation behind all web pages. It’s used to add structure and form to text, images, and more. CSS is the language used to style HTML content. In this first course, you’ll learn the fundamentals of both languages so that you can create visually appealing web pages.</p>
+        </div>
+        <div class="content1" >
+            <b>SKILL PATHS</b>
+            <p>Career Paths guide you through exactly what you need to learn to build a solid foundation for a career in tech.</p>
+        </div>
+        <div class="info">
+            <div class="info1">
+            <img src="images/pic1_03.png" alt="pic1"/>
+                <div class="box1">
+                    <b>Learn How to Build Websites</b>
+                    <p>Learn the basics of web development to build your own website.</p>
+                 </div>
+            </box1>
+        </div>
+    </div>
+        <div class="session">
+            <div class="box1">
+                <b>COURSES</b>
+                <p>
+                    Codecademy courses teach you a specific language or technology through interactive lessons.
+                </p>
+            </div>
+            <ul>
+                <li class="cube1">
+
+                    <div class="blue">
+                        <div class="bl bl1"></div>
+                        <div class="blueSqu1"></div>
+                        <b>Introduction to HTML</b>
+                        <p>In just 7 hours, learn the basics of HTML5 and start building & editing web pages.</p>
+                    </div>
+                </li>
+                <li class="cube2">
+                    <div class="blue">
+                        <div class="bl bl2"></div>
+                        <div class="blueSqu2"></div>
+                        <b>Learn CSS</b>
+                        <p>Learn how to style and visually organize HTML with CSS. This course covers version 3 </p>
+                    </div>
+                </li>
+                <li class="cube3">
+                    <div class="blue">
+                        <div class="bl bl2"></div>
+                        <div class="blueSqu2"></div>
+                        <b>Learn Bootstrap</b>
+                        <p>Give your website a clear layout and polished style—fast! Learn how to use one of the most popular front-end frameworks, Bootstrap 4! </p>
+                    </div>
+                </li>
+                <li class="cube4">
+                    <div class="blue">
+                        <div class="bl bl3"></div>
+                        <div class="blueSqu3"></div>
+                        <b>Make a Website</b>
+                        <p>Explore HTML & CSS fundamentals as you build a website in this introductory web development course.</p>
+                    </div>
+                </li>
+                <li class="cube5">
+                    <div class="blue">
+                        <div class="bl bl4"></div>
+                        <div class="blueSqu4"></div>
+                        <b>Deploy a Website</b>
+                        <p>Learn how to publish a personal website to the public Internet.</p>
+                    </div>
+                </li>
+                <li class="cube6">
+                    <div class="blue">
+                        <div class="bl bl2"></div>
+                        <div class="blueSqu2"></div>
+                        <b>Learn Sass</b>
+                        <p>Expand your CSS knowledge by learning SCSS syntax, nesting, functions, and more in this course!</p>
+                    </div>
+                </li>
+                <li class="cube7">
+                    <div class="blue">
+                        <div class="bl bl3"></div>
+                        <div class="blueSqu3"></div>
+                        <b>Learn Responsive Design</b>
+                        <p>Learn responsive design techniques, like relative sizing units and media queries, to create websites viewable on devices of all sizes.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer1">
+            <p>Privacy Policy | Terms</p>
+        </div>
+        <div class="footer2">
+            <p>Made with️ <img src="http://chuantu.xyz/t6/702/1561022867x2073530527.png" alt="pic"/>️ in NYC © 2019 Codecademy</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
